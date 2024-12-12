@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 1em;
+        }
+        .invalid {
+            border: 1px solid red;
+        }
+        .valid {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Validasi</h2>
+    <form id="form">
+            <label for="name">Nama Pelanggan:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <span class="error" id="nameError"></span>
+            <br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <span class="error" id="emailError"></span>
+            <br>
+            <label for="departureTime">Jam Keberangkatan:</label><br>
+            <input type="text" id="departureTime" name="departureTime" placeholder="HH.MM"><br>
+            <span class="error" id="timeError"></span>
+            <br>
+            <label for="destination">Tujuan Keberangkatan:</label><br>
+            <input type="text" id="destination" name="destination"><br>
+            <span class="error" id="destinationError"></span>
+            <br>
+            <label for="ticketCount">Jumlah Tiket:</label><br>
+            <input type="number" id="ticketCount" name="ticketCount"><br>
+            <span class="error" id="ticketError"></span>
+            <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <h3>Data Form:</h3>
+    <div id="result"></div>
+
+    <script src="validasi.js"></script>
+</body>
+</html>
